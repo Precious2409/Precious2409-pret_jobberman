@@ -132,7 +132,6 @@ class RegisterAccount extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(height: 30,),
               SizedBox(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,

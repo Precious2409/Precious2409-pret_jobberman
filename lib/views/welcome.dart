@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pret_jobberman/views/home.dart';
 import 'package:pret_jobberman/views/register.dart';
 
 class WelcomeScreen extends StatelessWidget {
@@ -93,7 +94,12 @@ class WelcomeScreen extends StatelessWidget {
                     padding: EdgeInsets.all(20),
                     child: Center(
                       child: ElevatedButton(
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => HomePage())
+                        );
+                      },
                       style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.blue.shade800,
                           shape:  RoundedRectangleBorder(

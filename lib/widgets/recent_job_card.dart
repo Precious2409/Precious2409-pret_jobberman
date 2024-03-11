@@ -60,6 +60,7 @@ class RecentJobCard extends StatelessWidget {
             ClipRRect(
               borderRadius: BorderRadius.circular(4),
               child: Container(
+                height:30,
                 padding: EdgeInsets.all(5),
                 color: Colors.white,
                 child: Text(
