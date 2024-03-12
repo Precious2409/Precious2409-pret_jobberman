@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pret_jobberman/views/navigation.dart';
 import 'package:pret_jobberman/views/welcome.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: WelcomeScreen() ,
+      home: NavigationScope() ,
     );
   }
 }

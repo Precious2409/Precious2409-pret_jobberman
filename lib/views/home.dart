@@ -2,8 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:pret_jobberman/widgets/job_card.dart';
 import 'package:pret_jobberman/widgets/recent_job_card.dart';
 
-class HomePage extends StatelessWidget {
+import 'message.dart';
+
+class HomePage extends StatefulWidget {
   HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+
 
   final List jobsForYou = [
     ["Google","Lead Product Manager", "assets/images/googleimg.png", 2500],
@@ -78,9 +87,9 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-        
+
             SizedBox(height: 20,),
-        
+
             //popular job _ job cards
             Padding(
                 padding: const EdgeInsets.only(left: 25),
@@ -92,9 +101,9 @@ class HomePage extends StatelessWidget {
               )
               ),
             ),
-        
+
             SizedBox(height: 20,),
-        
+
             SizedBox(
               height: 140,
               child: ListView.builder(
@@ -109,9 +118,9 @@ class HomePage extends StatelessWidget {
                 );
               })
             ),
-        
+
             SizedBox(height: 20,),
-        
+
             Padding(
               padding: const EdgeInsets.only(left: 25),
               child: Text(
@@ -137,18 +146,9 @@ class HomePage extends StatelessWidget {
                     );
                   }),
                 ))
-        
+
           ],
         ),
-      ),
-      bottomNavigationBar: BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
-        items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home_filled), label: "Home"),
-          BottomNavigationBarItem(icon: Icon(Icons.chat_bubble), label: "Messages"),
-          BottomNavigationBarItem(icon: Icon(Icons.person_rounded), label: "Profile"),
-          BottomNavigationBarItem(icon: Icon(Icons.settings), label: "Settings"),
-        ],
       ),
     );
   }

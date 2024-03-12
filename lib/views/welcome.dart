@@ -15,7 +15,6 @@ class WelcomeScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              SizedBox(height: 25,),
               Text(
                   "Welcome Back!",
                 style: TextStyle(
